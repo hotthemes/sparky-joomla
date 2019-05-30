@@ -1,0 +1,353 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="3.0" type="template" client="site" method="upgrade">
+
+	<name>sparky_framework</name>
+	<author>HotThemes</author>
+	<copyright>Copyright 2016 by HotThemes</copyright>
+	<authorEmail>info@hotjoomlatemplates.com</authorEmail>
+	<authorUrl>http://www.hotjoomlatemplates.com</authorUrl>
+	<version>2.7.10</version>
+	<description>TPL_SPARKY_FRAMEWORK_DESCRIPTION</description>
+	<creationDate>November 2016</creationDate>
+	
+	<files>
+		<filename>component.php</filename>
+		<filename>index.html</filename>
+		<filename>index.php</filename>
+		<filename>params.ini</filename>
+		<filename>template_preview.png</filename>
+		<filename>template_thumbnail.png</filename>
+		<filename>templateDetails.xml</filename>
+		<folder>css/</folder>
+		<folder>elements/</folder>
+		<folder>export/</folder>
+		<folder>html/</folder>
+		<folder>images/</folder>
+		<folder>js/</folder>
+		<folder>language/</folder>
+		<folder>library/</folder>
+	</files>
+	
+	<languages folder="language">
+		<language tag="en-GB">en-GB/en-GB.tpl_sparky_framework.ini</language>
+		<language tag="en-GB">en-GB/en-GB.tpl_sparky_framework.sys.ini</language>
+	</languages>
+	
+	<positions>
+		<position>copyright</position>
+		<position>fontresize</position>
+		<position>logo</position>
+		<position>abovecontent</position>
+		<position>belowcontent</position>
+		<position>advert1</position>
+		<position>advert2</position>
+		<position>advert3</position>
+		<position>advert4</position>
+		<position>advert5</position>
+		<position>advert6</position>
+		<position>bottom1</position>
+		<position>bottom2</position>
+		<position>bottom3</position>
+		<position>bottom4</position>
+		<position>bottom5</position>
+		<position>bottom6</position>
+		<position>footer</position>
+		<position>header1</position>
+		<position>header2</position>
+		<position>header3</position>
+		<position>header4</position>
+		<position>header5</position>
+		<position>header6</position>
+		<position>left</position>
+		<position>right</position>
+		<position>search</position>
+		<position>top1</position>
+		<position>top2</position>
+		<position>top3</position>
+		<position>top4</position>
+		<position>top5</position>
+		<position>top6</position>
+		<position>user1</position>
+		<position>user2</position>
+		<position>user3</position>
+		<position>user4</position>
+		<position>user5</position>
+		<position>user6</position>
+		<position>megamenu1</position>
+		<position>megamenu2</position>
+		<position>megamenu3</position>
+		<position>megamenu4</position>
+		<position>megamenu5</position>
+		<position>megamenu6</position>
+		<position>megamenu7</position>
+		<position>megamenu8</position>
+		<position>megamenu9</position>
+		<position>megamenu10</position>
+	</positions>
+	
+	<config>
+		<fields name="params" addfieldpath="/templates/sparky_framework/elements" enctype="multipart/form-data">
+			<fieldset name="layoutdesign" label="TPL_SPARKY_FRAMEWORK_LAYOUT_DESIGN">
+				<field type="tadmin"/>
+				<field name="templateWidth" type="dimension" default="960@px" label="TPL_SPARKY_FRAMEWORK_TEMPLATE_WIDTH_LBL" description="TPL_SPARKY_FRAMEWORK_TEMPLATE_WIDTH_DESC"/>
+				<field name="gridSystem" type="width" default="12" min="1" max="24" label="TPL_SPARKY_FRAMEWORK_GRID_NUMBER" description="TPL_SPARKY_FRAMEWORK_GRID_NUMBER_DESC"/>
+				<field name="layoutdesign" type="designlayout" label="TPL_SPARKY_FRAMEWORK_LAYOUT_DESIGN_LBL" description="TPL_SPARKY_FRAMEWORK_LAYOUT_DESIGN_DESC" default=""/>
+				<field name="cellPaddingHorizontal" type="dimension" default="15@px" label="TPL_SPARKY_FRAMEWORK_CELL_PADDING_HORIZONTAL_LBL" description="TPL_SPARKY_FRAMEWORK_CELL_PADDING_HORIZONTAL_DESC" />
+				<field name="cellPaddingVertical" type="dimension" default="15@px" label="TPL_SPARKY_FRAMEWORK_CELL_PADDING_VERTICAL_LBL" description="TPL_SPARKY_FRAMEWORK_CELL_PADDING_VERTICAL_DESC" />
+			</fieldset>
+			<fieldset name="fontsettings" label="TPL_SPARKY_FRAMEWORK_STYLE_DESIGNER">
+				<field name="subtabstart1" type="subtabstart" default="" label="TPL_SPARKY_FRAMEWORK_FEATURES_BACKGROUND_LBL"/>
+					<field name="bodyBgColor" type="color" label="TPL_SPARKY_FRAMEWORK_BODY_BG_LBL" description="TPL_SPARKY_FRAMEWORK_COLOR_DESC" default=""/>
+					<field name="bodyBgImageFile" type="imagelist" label="TPL_SPARKY_FRAMEWORK_BG_IMAGE_LBL" description="TPL_SPARKY_FRAMEWORK_IMAGE_SELECT_DESC" default="" directory="templates/sparky_framework/images" />
+					<field name="bodyBgImageVerticalAlign" type="list" default="top" label="TPL_SPARKY_FRAMEWORK_BG_IMAGE_VERTICAL_ALIGN_LBL" description="TPL_SPARKY_FRAMEWORK_BG_IMAGE_VERTICAL_ALIGN_DESC">
+						<option value="top">Top</option>
+						<option value="center">Center</option>
+						<option value="bottom">Bottom</option>
+					</field>
+					<field name="bodyBgImageHorizontalAlign" type="list" default="center" label="TPL_SPARKY_FRAMEWORK_BG_IMAGE_HORIZONTAL_ALIGN_LBL" description="TPL_SPARKY_FRAMEWORK_BG_IMAGE_HORIZONTAL_ALIGN_DESC">
+						<option value="left">Left</option>
+						<option value="center">Center</option>
+						<option value="right">Right</option>
+					</field>
+					<field name="bodyBgImageRepeat" type="list" default="repeat" label="TPL_SPARKY_FRAMEWORK_BG_IMAGE_REPEAT_LBL" description="TPL_SPARKY_FRAMEWORK_BG_IMAGE_REPEAT_DESC">
+						<option value="repeat">TPL_SPARKY_FRAMEWORK_BG_IMAGE_REPEAT_REPEAT_LBL</option>
+						<option value="repeat-x">TPL_SPARKY_FRAMEWORK_BG_IMAGE_REPEAT_REPEAT_HORIZONTALLY_LBL</option>
+						<option value="repeat-y">TPL_SPARKY_FRAMEWORK_BG_IMAGE_REPEAT_REPEAT_VERTICALLY_LBL</option>
+						<option value="no-repeat">TPL_SPARKY_FRAMEWORK_BG_IMAGE_REPEAT_NO_REPEAT_LBL</option>
+					</field>
+					<field name="bodyBgImageFixedSwitch" type="flipyesno" default="" label="TPL_SPARKY_FRAMEWORK_BODY_BG_IMAGE_FIXED_SWITCH_LBL" description="TPL_SPARKY_FRAMEWORK_BODY_BG_IMAGE_FIXED_SWITCH_DESC"/>
+					<field name="containerBgColor" type="color" label="TPL_SPARKY_FRAMEWORK_CONTAINER_BG_LBL" description="TPL_SPARKY_FRAMEWORK_COLOR_DESC" default=""/>
+				<field name="subtabstart2" type="subtabstart" default="" label="TPL_SPARKY_FRAMEWORK_H1_LBL"/>
+					<field name="h1Color" type="color" default="#333333" label="TPL_SPARKY_FRAMEWORK_COLOR_LBL" description="TPL_SPARKY_FRAMEWORK_COLOR_DESC" />
+					<field name="h1Size" type="dimension" default="60@px" label="TPL_SPARKY_FRAMEWORK_FONT_SIZE_LBL" description="TPL_SPARKY_FRAMEWORK_FONT_SIZE_DESC" />
+					<field name="h1LineHeight" type="number" default="1.4" label="TPL_SPARKY_FRAMEWORK_FONT_LINE_HEIGHT_LBL" description="TPL_SPARKY_FRAMEWORK_FONT_LINE_HEIGHT_DESC" size="3" />
+					<field name="h1FontHot" type="hotfont" default='{"fontFamily":"Arial, Helvetica, sans-serif","fontWeight":"normal","fontStyle":"normal"}' label="TPL_SPARKY_FRAMEWORK_FONT_FAMILY_LBL" description="TPL_SPARKY_FRAMEWORK_FONT_FAMILY_DESC"/>
+					<field name="h1Align" type="list" default="left" label="TPL_SPARKY_FRAMEWORK_TEXT_ALIGN_LBL" description="TPL_SPARKY_FRAMEWORK_TEXT_ALIGN_DESC">
+						<option value="left">Left</option>
+						<option value="center">Center</option>
+						<option value="right">Right</option>
+					</field>
+		
+					<field name="h1Underline" type="flipyesno" default="0" label="TPL_SPARKY_FRAMEWORK_FONT_UNDERLINE_LBL" description="TPL_SPARKY_FRAMEWORK_FONT_UNDERLINE_DESC"/>
+				<field name="subtabstart3" type="subtabstart" default="" label="TPL_SPARKY_FRAMEWORK_H2_LBL"/>
+					<field name="h2Color" type="color" default="#333333" label="TPL_SPARKY_FRAMEWORK_COLOR_LBL" description="TPL_SPARKY_FRAMEWORK_COLOR_DESC" />
+					<field name="h2Size" type="dimension" default="32@px" label="TPL_SPARKY_FRAMEWORK_FONT_SIZE_LBL" description="TPL_SPARKY_FRAMEWORK_FONT_SIZE_DESC" />
+					<field name="h2LineHeight" type="number" default="1.4" label="TPL_SPARKY_FRAMEWORK_FONT_LINE_HEIGHT_LBL" description="TPL_SPARKY_FRAMEWORK_FONT_LINE_HEIGHT_DESC" size="3" />
+					<field name="h2FontHot" type="hotfont" default='{"fontFamily":"Arial, Helvetica, sans-serif","fontWeight":"normal","fontStyle":"normal"}' label="TPL_SPARKY_FRAMEWORK_FONT_FAMILY_LBL" description="TPL_SPARKY_FRAMEWORK_FONT_FAMILY_DESC"/>
+		
+					<field name="h2Align" type="list" default="left" label="TPL_SPARKY_FRAMEWORK_TEXT_ALIGN_LBL" description="TPL_SPARKY_FRAMEWORK_TEXT_ALIGN_DESC">
+						<option value="left">Left</option>
+						<option value="center">Center</option>
+						<option value="right">Right</option>
+					</field>
+	
+					<field name="h2Underline" type="flipyesno" default="0" label="TPL_SPARKY_FRAMEWORK_FONT_UNDERLINE_LBL" description="TPL_SPARKY_FRAMEWORK_FONT_UNDERLINE_DESC"/>
+				<field name="subtabstart4" type="subtabstart" default="" label="TPL_SPARKY_FRAMEWORK_H3_LBL"/>
+					<field name="h3Color" type="color" default="#333333" label="TPL_SPARKY_FRAMEWORK_COLOR_LBL" description="TPL_SPARKY_FRAMEWORK_COLOR_DESC" />
+					<field name="h3Size" type="dimension" default="24@px" label="TPL_SPARKY_FRAMEWORK_FONT_SIZE_LBL" description="TPL_SPARKY_FRAMEWORK_FONT_SIZE_DESC" />
+					<field name="h3LineHeight" type="number" default="1.4" label="TPL_SPARKY_FRAMEWORK_FONT_LINE_HEIGHT_LBL" description="TPL_SPARKY_FRAMEWORK_FONT_LINE_HEIGHT_DESC" size="3" />
+					<field name="h3FontHot" type="hotfont" default='{"fontFamily":"Arial, Helvetica, sans-serif","fontWeight":"normal","fontStyle":"normal"}' label="TPL_SPARKY_FRAMEWORK_FONT_FAMILY_LBL" description="TPL_SPARKY_FRAMEWORK_FONT_FAMILY_DESC"/>
+					
+					<field name="h3Align" type="list" default="left" label="TPL_SPARKY_FRAMEWORK_TEXT_ALIGN_LBL" description="TPL_SPARKY_FRAMEWORK_TEXT_ALIGN_DESC">
+						<option value="left">Left</option>
+						<option value="center">Center</option>
+						<option value="right">Right</option>
+					</field>
+			
+					<field name="h3Underline" type="flipyesno" default="0" label="TPL_SPARKY_FRAMEWORK_FONT_UNDERLINE_LBL" description="TPL_SPARKY_FRAMEWORK_FONT_UNDERLINE_DESC"/>
+				<field name="subtabstart5" type="subtabstart" default="" label="TPL_SPARKY_FRAMEWORK_H4_LBL"/>
+					<field name="h4Color" type="color" default="#333333" label="TPL_SPARKY_FRAMEWORK_COLOR_LBL" description="TPL_SPARKY_FRAMEWORK_COLOR_DESC"/>
+					<field name="h4Size" type="dimension" default="14@px" label="TPL_SPARKY_FRAMEWORK_FONT_SIZE_LBL" description="TPL_SPARKY_FRAMEWORK_FONT_SIZE_DESC" />
+					<field name="h4LineHeight" type="number" default="1.4" label="TPL_SPARKY_FRAMEWORK_FONT_LINE_HEIGHT_LBL" description="TPL_SPARKY_FRAMEWORK_FONT_LINE_HEIGHT_DESC" size="3" />
+					<field name="h4FontHot" type="hotfont" default='{"fontFamily":"Arial, Helvetica, sans-serif","fontWeight":"normal","fontStyle":"normal"}' label="TPL_SPARKY_FRAMEWORK_FONT_FAMILY_LBL" description="TPL_SPARKY_FRAMEWORK_FONT_FAMILY_DESC"/>
+					
+					<field name="h4Align" type="list" default="left" label="TPL_SPARKY_FRAMEWORK_TEXT_ALIGN_LBL" description="TPL_SPARKY_FRAMEWORK_TEXT_ALIGN_DESC">
+						<option value="left">Left</option>
+						<option value="center">Center</option>
+						<option value="right">Right</option>
+					</field>
+				
+					<field name="h4Underline" type="flipyesno" default="0" label="TPL_SPARKY_FRAMEWORK_FONT_UNDERLINE_LBL" description="TPL_SPARKY_FRAMEWORK_FONT_UNDERLINE_DESC"/>
+				<field name="subtabstart6" type="subtabstart" default="" label="TPL_SPARKY_FRAMEWORK_P_LBL"/>
+					<field name="pColor" type="color" default="#333333" label="TPL_SPARKY_FRAMEWORK_COLOR_LBL" description="TPL_SPARKY_FRAMEWORK_COLOR_DESC"/>
+					<field name="pSize" type="dimension" default="14@px" label="TPL_SPARKY_FRAMEWORK_FONT_SIZE_LBL" description="TPL_SPARKY_FRAMEWORK_FONT_SIZE_DESC" />
+					<field name="pLineHeight" type="number" default="1.4" label="TPL_SPARKY_FRAMEWORK_FONT_LINE_HEIGHT_LBL" description="TPL_SPARKY_FRAMEWORK_FONT_LINE_HEIGHT_DESC" size="3" />
+					<field name="pFontHot" type="hotfont" default='{"fontFamily":"Arial, Helvetica, sans-serif","fontWeight":"normal","fontStyle":"normal"}' label="TPL_SPARKY_FRAMEWORK_FONT_FAMILY_LBL" description="TPL_SPARKY_FRAMEWORK_FONT_FAMILY_DESC"/>
+					
+					<field name="pAlign" type="list" default="left" label="TPL_SPARKY_FRAMEWORK_TEXT_ALIGN_LBL" description="TPL_SPARKY_FRAMEWORK_TEXT_ALIGN_DESC">
+						<option value="left">Left</option>
+						<option value="center">Center</option>
+						<option value="right">Right</option>
+						<option value="justify">Justify</option>
+					</field>
+			
+				<field name="subtabstart7" type="subtabstart" default="" label="TPL_SPARKY_FRAMEWORK_LINKS_LBL"/>
+					<field name="linksColor" type="color" default="#8B1E20" label="TPL_SPARKY_FRAMEWORK_COLOR_LBL" description="TPL_SPARKY_FRAMEWORK_COLOR_DESC"/>
+					<field name="linksHoverColor" type="color" default="#333333" label="TPL_SPARKY_FRAMEWORK_HOVER_COLOR_LBL" description="TPL_SPARKY_FRAMEWORK_COLOR_DESC"/>
+					<field name="linksWeight" type="list" default="normal" label="TPL_SPARKY_FRAMEWORK_FONT_WEIGHT_LBL" description="TPL_SPARKY_FRAMEWORK_FONT_WEIGHT_DESC">
+						<option value="100">100</option>
+						<option value="200">200</option>
+						<option value="300">300</option>
+						<option value="normal">Normal</option>
+						<option value="500">500</option>
+						<option value="600">600</option>
+						<option value="bold">Bold</option>
+						<option value="800">800</option>
+						<option value="900">900</option>
+					</field>
+					<field name="linksStyle" type="list" default="normal" label="TPL_SPARKY_FRAMEWORK_FONT_STYLE_LBL" description="TPL_SPARKY_FRAMEWORK_FONT_STYLE_DESC">
+						<option value="normal">Normal</option>
+						<option value="italic">Italic</option>
+					</field>
+					<field name="linksUnderline" type="flipyesno" default="0" label="TPL_SPARKY_FRAMEWORK_FONT_UNDERLINE_LBL" description="TPL_SPARKY_FRAMEWORK_FONT_UNDERLINE_DESC"/>
+					<field name="linksUnderlineHover" type="flipyesno" default="0" label="TPL_SPARKY_FRAMEWORK_FONT_UNDERLINE_HOVER_LBL" description="TPL_SPARKY_FRAMEWORK_FONT_UNDERLINE_DESC"/>
+				<field name="subtabstart8" type="subtabstart" default="" label="TPL_SPARKY_FRAMEWORK_SELECT_STYLE"/>
+					<field name="templateStyle" type="list" default="0" label="TPL_SPARKY_FRAMEWORK_SELECT_TEMPLATE_STYLE">
+						<option value="0">TPL_SPARKY_FRAMEWORK_SELECT_STYLE1</option>
+						<option value="2">TPL_SPARKY_FRAMEWORK_SELECT_STYLE2</option>
+						<option value="3">TPL_SPARKY_FRAMEWORK_SELECT_STYLE3</option>
+						<option value="4">TPL_SPARKY_FRAMEWORK_SELECT_STYLE4</option>
+						<option value="5">TPL_SPARKY_FRAMEWORK_SELECT_STYLE5</option>
+					</field>
+			</fieldset>
+			<fieldset name="features" label="TPL_SPARKY_FRAMEWORK_FEATURES">
+				<field name="subtabstart1" type="subtabstart" default="" label="TPL_SPARKY_FRAMEWORK_FEATURES_BRANDING_LBL"/>
+					<field name="logoImageSpacer" type="hotspacer" label="TPL_SPARKY_FRAMEWORK_LOGO_IMAGE_SETTINGS_LBL"/>
+					<field name="logoImageFile" type="imagelist" label="TPL_SPARKY_FRAMEWORK_LOGO_IMAGE_FILE_LBL" description="TPL_SPARKY_FRAMEWORK_IMAGE_SELECT_DESC" directory="templates/sparky_framework/images" default="-1" />
+					<field name="logoImageAlt" type="text" label="TPL_SPARKY_FRAMEWORK_LOGO_IMAGE_ALT_LBL" description="TPL_SPARKY_FRAMEWORK_LOGO_IMAGE_ALT_DESC" default="Sparky"/>
+					<field name="logoTextSpacer" type="hotspacer" label="TPL_SPARKY_FRAMEWORK_LOGO_SETTINGS_LBL"/>
+					<field name="logoTextSpacerIntro" type="spacer" label="TPL_SPARKY_FRAMEWORK_LOGO_SETTINGS_INTRO_LBL"/>
+					<field name="logoText" type="text" label="TPL_SPARKY_FRAMEWORK_LOGO_TEXT_LBL" description="TPL_SPARKY_FRAMEWORK_LOGO_TEXT_DESC" default="Sparky"/>
+					<field name="logoColor" type="color" label="TPL_SPARKY_FRAMEWORK_COLOR_LBL" description="TPL_SPARKY_FRAMEWORK_COLOR_DESC" default="#999999"/>
+					<field name="logoSize" type="dimension" label="TPL_SPARKY_FRAMEWORK_FONT_SIZE_LBL" description="TPL_SPARKY_FRAMEWORK_FONT_SIZE_DESC" default="24@px" />
+					
+					<field name="logoFontHot" type="hotfont" default='{"fontFamily":"Arial, Helvetica, sans-serif","fontWeight":"normal","fontStyle":"normal"}' label="TPL_SPARKY_FRAMEWORK_FONT_FAMILY_LBL" description="TPL_SPARKY_FRAMEWORK_FONT_FAMILY_DESC"/>
+			
+					<field name="logoAlign" type="list" default="left" label="TPL_SPARKY_FRAMEWORK_TEXT_ALIGN_LBL" description="TPL_SPARKY_FRAMEWORK_TEXT_ALIGN_DESC">
+						<option value="left">Left</option>
+						<option value="center">Center</option>
+						<option value="right">Right</option>
+					</field>
+					<field name="sloganTextSpacer" type="hotspacer" label="TPL_SPARKY_FRAMEWORK_SLOGAN_SETTINGS_LBL"/>
+					<field name="sloganText" type="text" label="TPL_SPARKY_FRAMEWORK_SLOGAN_TEXT_LBL" description="TPL_SPARKY_FRAMEWORK_SLOGAN_TEXT_DESC" default=""/>
+					<field name="sloganColor" type="color" label="TPL_SPARKY_FRAMEWORK_COLOR_LBL" description="TPL_SPARKY_FRAMEWORK_COLOR_DESC" default="#999999"/>
+					<field name="sloganSize" type="dimension" label="TPL_SPARKY_FRAMEWORK_FONT_SIZE_LBL" description="TPL_SPARKY_FRAMEWORK_FONT_SIZE_DESC" default="12@px" />
+				
+					<field name="sloganFontHot" type="hotfont" default='{"fontFamily":"Arial, Helvetica, sans-serif","fontWeight":"normal","fontStyle":"normal"}' label="TPL_SPARKY_FRAMEWORK_FONT_FAMILY_LBL" description="TPL_SPARKY_FRAMEWORK_FONT_FAMILY_DESC"/>
+				
+					<field name="sloganAlign" type="list" default="left" label="TPL_SPARKY_FRAMEWORK_TEXT_ALIGN_LBL" description="TPL_SPARKY_FRAMEWORK_TEXT_ALIGN_DESC">
+						<option value="left">Left</option>
+						<option value="center">Center</option>
+						<option value="right">Right</option>
+					</field>
+					<field name="faviconSpacer" type="hotspacer" label="TPL_SPARKY_FRAMEWORK_FAVICONS_LBL"/>
+					<field name="favicon" type="imagelist" label="TPL_SPARKY_FRAMEWORK_BROWSER_BAR_ICON_LBL" description="TPL_SPARKY_FRAMEWORK_BROWSER_BAR_ICON_DESC" default="favicon.ico" directory="templates/sparky_framework/images/icons" exclude="png|gif|jpg" />
+					<field name="appleicon" type="imagelist" label="TPL_SPARKY_FRAMEWORK_APPLE_ICON_LBL" description="TPL_SPARKY_FRAMEWORK_APPLE_ICON_DESC" default="icon180x180.png" directory="templates/sparky_framework/images/icons" exclude="gif|jpg" />
+					<field name="androidicon" type="imagelist" label="TPL_SPARKY_FRAMEWORK_ANDROID_ICON_LBL" description="TPL_SPARKY_FRAMEWORK_ANDROID_ICON_DESC" default="icon192x192.png" directory="templates/sparky_framework/images/icons" exclude="gif|jpg" />
+					<field name="copyrightSpacer" type="hotspacer" label="TPL_SPARKY_FRAMEWORK_COPYRIGHT_SETTINGS_LBL"/>
+					<field name="copyright" type="text" default="Your Company" label="TPL_SPARKY_FRAMEWORK_LABEL_COPYRIGHT" />
+					<field name="googleUrl" type="hidden" default="{}" value="" />
+				<field name="subtabstart2" type="subtabstart" default="" label="TPL_SPARKY_FRAMEWORK_FEATURES_TOPPANEL_LBL"/>
+					<field name="topPanelSpacer" type="spacer" label="TPL_SPARKY_FRAMEWORK_TOP_PANEL_DESC"/>
+					<field name="topPanelSwitch" type="flipyesno" default="0" label="TPL_SPARKY_FRAMEWORK_TOP_PANEL_SWITCH_LBL" description="TPL_SPARKY_FRAMEWORK_TOP_PANEL_SWITCH_DESC"/>
+					<field name="topPanelOpen" type="text" default="Open" label="TPL_SPARKY_FRAMEWORK_TOP_PANEL_OPEN_LBL"/>
+					<field name="topPanelClose" type="text" default="Close" label="TPL_SPARKY_FRAMEWORK_TOP_PANEL_CLOSE_LBL"/>
+					<field name="topPanelButtonWidth" type="dimension" default="75@px" label="TPL_SPARKY_FRAMEWORK_TOP_PANEL_BUTTON_WIDTH_LBL" />
+					<field name="topPanelButtonHeight" type="dimension" default="18@px" label="TPL_SPARKY_FRAMEWORK_TOP_PANEL_BUTTON_HEIGHT_LBL" />
+					<field name="topPanelButtonBgColor" type="color" default="#000000" label="TPL_SPARKY_FRAMEWORK_TOP_PANEL_BUTTON_BG_COLOR_LBL" description="TPL_SPARKY_FRAMEWORK_COLOR_DESC"/>
+					<field name="topPanelButtonTextColor" type="color" default="#FFFFFF" label="TPL_SPARKY_FRAMEWORK_TOP_PANEL_BUTTON_TEXT_COLOR_LBL" description="TPL_SPARKY_FRAMEWORK_COLOR_DESC"/>
+					<field name="topPanelButtonTextSize" type="dimension" default="10@px" label="TPL_SPARKY_FRAMEWORK_TOP_PANEL_BUTTON_TEXT_SIZE_LBL" description="TPL_SPARKY_FRAMEWORK_FONT_SIZE_DESC" /> 
+					<field name="topPanelButtonBorderColor" type="color" default="#666666" label="TPL_SPARKY_FRAMEWORK_TOP_PANEL_BUTTON_BORDER_COLOR_LBL" description="TPL_SPARKY_FRAMEWORK_COLOR_DESC"/>
+					<field name="topPanelButtonBorderRadius" type="number" default="5" label="TPL_SPARKY_FRAMEWORK_TOP_PANEL_BUTTON_BORDER_RADIUS_LBL" size="3" />
+					<field name="topPanelBgColor" type="color" default="#000000" label="TPL_SPARKY_FRAMEWORK_TOP_PANEL_BG_COLOR_LBL" description="TPL_SPARKY_FRAMEWORK_COLOR_DESC"/>
+					<field name="topPanelH3Color" type="color" default="#CCCCCC" label="TPL_SPARKY_FRAMEWORK_TOP_PANEL_H3_COLOR_LBL" description="TPL_SPARKY_FRAMEWORK_COLOR_DESC"/>
+					<field name="topPanelTextColor" type="color" default="#CCCCCC" label="TPL_SPARKY_FRAMEWORK_TOP_PANEL_TEXT_COLOR_LBL" description="TPL_SPARKY_FRAMEWORK_COLOR_DESC"/>
+				<field name="subtabstart3" type="subtabstart" default="" label="TPL_SPARKY_FRAMEWORK_FEATURES_FONT_RESIZE_LBL"/>
+					<field name="fontResizeSpacer" type="spacer" label="TPL_SPARKY_FRAMEWORK_FONT_RESIZE_DESC"/>
+					<field name="fontResizeMinus" type="text" default="A-" label="TPL_SPARKY_FRAMEWORK_FONT_RESIZE_MINUS_LBL" description="TPL_SPARKY_FRAMEWORK_FONT_RESIZE_MINUS_DESC" filter="raw"/>
+					<field name="fontResizeReset" type="text" default="Reset" label="TPL_SPARKY_FRAMEWORK_FONT_RESIZE_RESET_LBL" description="TPL_SPARKY_FRAMEWORK_FONT_RESIZE_RESET_DESC" filter="raw"/>
+					<field name="fontResizePlus" type="text" default="A+" label="TPL_SPARKY_FRAMEWORK_FONT_RESIZE_PLUS_LBL" description="TPL_SPARKY_FRAMEWORK_FONT_RESIZE_PLUS_DESC" filter="raw"/>
+				<field name="subtabstart4" type="subtabstart" default="" label="TPL_SPARKY_FRAMEWORK_FEATURES_ANALYTICS_LBL"/>
+					<field name="googleWebAnalyticsSpacer" type="spacer" label="TPL_SPARKY_FRAMEWORK_ANALYTICS_DESC"/>
+					<field name="analyticsSwitch" type="flipyesno" default="0" label="TPL_SPARKY_FRAMEWORK_ANALYTICS_SWITCH_LBL" description="TPL_SPARKY_FRAMEWORK_ANALYTICS_SWITCH_DESC"/>
+					<field name="analyticsAccount" type="text" default="" label="TPL_SPARKY_FRAMEWORK_ANALYTICS_ACCOUNT_LBL" description="TPL_SPARKY_FRAMEWORK_ANALYTICS_ACCOUNT_DESC"/>
+				<field name="subtabstart5" type="subtabstart" default="" label="TPL_SPARKY_FRAMEWORK_GOOGLE_WEB_FONTS_LBL"/>
+					
+					<field name="fontHot" type="hotfontfeatures" default="" label="TPL_SPARKY_FRAMEWORK_FONT_FAMILY_LBL" description="TPL_SPARKY_FRAMEWORK_FONT_FAMILY_DESC"/>
+				<field name="subtabstart6" type="subtabstart" default="" label="TPL_SPARKY_FRAMEWORK_SCROLL_TO_TOP_LBL"/>
+					<field name="scrollToTopSpacer" type="spacer" label="TPL_SPARKY_FRAMEWORK_SCROLL_TO_TOP_SPACER_DESC"/>
+					<field name="scrollToTopImageFile" type="imagelist" label="TPL_SPARKY_FRAMEWORK_SCROLL_TO_TOP_IMAGE_FILE_LBL" description="TPL_SPARKY_FRAMEWORK_IMAGE_SELECT_DESC" default="-1" directory="templates/sparky_framework/images" />
+					<field name="scrollToTopPosition" type="list" default="bottom_right" label="TPL_SPARKY_FRAMEWORK_SCROLL_TO_TOP_POSITION_LBL" description="TPL_SPARKY_FRAMEWORK_SCROLL_TO_TOP_POSITION_DESC">
+						<option value="bottom_right">TPL_SPARKY_FRAMEWORK_SCROLL_TO_TOP_POSITION_BOTTOM_RIGHT</option>
+						<option value="bottom_left">TPL_SPARKY_FRAMEWORK_SCROLL_TO_TOP_POSITION_BOTTOM_LEFT</option>
+						<option value="top_right">TPL_SPARKY_FRAMEWORK_SCROLL_TO_TOP_POSITION_TOP_RIGHT</option>
+						<option value="top_left">TPL_SPARKY_FRAMEWORK_SCROLL_TO_TOP_POSITION_TOP_LEFT</option>
+					</field>
+				<field name="subtabstart7" type="subtabstart" default="" label="TPL_SPARKY_FRAMEWORK_EQUAL_HEIGHTS_LBL"/>
+					<field name="equalHeightSpacer" type="spacer" label="TPL_SPARKY_FRAMEWORK_EQUAL_HEIGHT_CLASSES_DESC"/>
+					<field name="equalHeightSpacer2" type="spacer" label="TPL_SPARKY_FRAMEWORK_EQUAL_HEIGHT_CLASSES_DESC2"/>
+					<field name="equalHeightClasses" type="textarea" cols="50" rows="3" label="TPL_SPARKY_FRAMEWORK_EQUAL_HEIGHT_CLASSES_LBL" description="TPL_SPARKY_FRAMEWORK_EQUAL_HEIGHT_CLASSES_DESC"/>
+				<field name="subtabstart8" type="subtabstart" default="" label="TPL_SPARKY_FRAMEWORK_IMAGE_ANIMATION_LBL"/>
+					<field name="imageAnimationSpacer" type="spacer" label="TPL_SPARKY_FRAMEWORK_IMAGE_ANIMATION_DESC"/>
+					<field name="imageAnimation" type="flipyesno" default="0" label="TPL_SPARKY_FRAMEWORK_IMAGE_ANIMATION_LOAD_LBL" description="TPL_SPARKY_FRAMEWORK_IMAGE_ANIMATION_LOAD_DESC"/>
+				<field name="subtabstart9" type="subtabstart" default="" label="Page Transitions"/>
+					<field name="pageTransitionSpacer" type="spacer" label="TPL_SPARKY_FRAMEWORK_PAGE_TRANSITION_DESC"/>
+					<field name="pageTransition" type="flipyesno" default="0" label="TPL_SPARKY_FRAMEWORK_PAGE_TRANSITION_ENABLE" />
+					<field name="pageTransitionDelay" type="number" default="1000" label="TPL_SPARKY_FRAMEWORK_PAGE_TRANSITION_DELAY" description="TPL_SPARKY_FRAMEWORK_PAGE_TRANSITION_DELAY_DESC" size="3" />
+					<field name="pageTransitionBg" type="color" label="TPL_SPARKY_FRAMEWORK_BACKGROUND_COLOR" description="TPL_SPARKY_FRAMEWORK_PAGE_TRANSITION_BG_COLOR_DESC" default="#333333"/>
+					<field name="pageTransitionSpinner" type="list" default="spinner1" label="TPL_SPARKY_FRAMEWORK_PAGE_TRANSITION_SPINNER" description="TPL_SPARKY_FRAMEWORK_PAGE_TRANSITION_SPINNER_DESC">
+						<option value="spinner1">TPL_SPARKY_FRAMEWORK_TWO_GROWING_CIRCLES</option>
+						<option value="spinner2">TPL_SPARKY_FRAMEWORK_ROTATING_SMALL_CIRCLES</option>
+						<option value="spinner3">TPL_SPARKY_FRAMEWORK_TWO_ROTATING_GROWING_CIRCLES</option>
+						<option value="spinner4">TPL_SPARKY_FRAMEWORK_ROTATING_SQUARE</option>
+						<option value="spinner5">TPL_SPARKY_FRAMEWORK_TWO_SMALL_SQUARES</option>
+						<option value="spinner6">TPL_SPARKY_FRAMEWORK_PULSING_RECTANGLES</option>
+						<option value="spinner7">TPL_SPARKY_FRAMEWORK_PULSING_CIRCLES</option>
+					</field>
+					<field name="pageTransitionImage" type="imagelist" label="TPL_SPARKY_FRAMEWORK_USE_BG_IMAGE" description="TPL_SPARKY_FRAMEWORK_PAGE_TRANSITION_BG_IMAGE_DESC" default="-1" directory="templates/sparky_framework/images" />
+				<field name="subtabstart10" type="subtabstart" default="" label="TPL_SPARKY_FRAMEWORK_SCRIPTS_LBL"/>
+					<field name="loadBootstrapSpacer" type="spacer" label="TPL_SPARKY_FRAMEWORK_LOAD_BOOTSTRAP_SPACER"/>
+					<field name="loadBootstrap" type="flipyesno" default="1" label="TPL_SPARKY_FRAMEWORK_LOAD_BOOTSTRAP_LBL" description="TPL_SPARKY_FRAMEWORK_LOAD_BOOTSTRAP_DESC"/>
+					<field name="loadJqueryUISpacer" type="spacer" label="TPL_SPARKY_FRAMEWORK_LOAD_JQUERYUI_SPACER"/>
+					<field name="loadJqueryUI" type="flipyesno" default="0" label="TPL_SPARKY_FRAMEWORK_LOAD_JQUERYUI_LBL" description="TPL_SPARKY_FRAMEWORK_LOAD_JQUERYUI_DESC"/>
+					<field name="loadFontAwesomeSpacer" type="spacer" label=""/>
+					<field name="loadFontAwesome" type="flipyesno" default="0" label="TPL_SPARKY_FRAMEWORK_LOAD_FONTAWESOME_LBL" description="TPL_SPARKY_FRAMEWORK_LOAD_FONTAWESOME_DESC"/>
+					<field name="loadFontAwesomeSpacer" type="spacer" label="TPL_SPARKY_FRAMEWORK_LOAD_FONTAWESOME_SPACER"/>
+					<field name="lazyLoadSpacer" type="spacer" label="TPL_SPARKY_FRAMEWORK_LOAD_LAZYLOAD_SPACER"/>
+					<field name="lazyLoad" type="flipyesno" default="0" label="TPL_SPARKY_FRAMEWORK_LOAD_LAZYLOAD_LBL" description="TPL_SPARKY_FRAMEWORK_LOAD_LAZYLOAD_DESC"/>
+			</fieldset>
+			<fieldset name="menuconfig" label="TPL_SPARKY_FRAMEWORK_MENUS">
+			    <field name="mnucfg" type="mnucfg" default="" label="TPL_SPARKY_FRAMEWORK_MENUCFG_LBL" description="TPL_SPARKY_FRAMEWORK_MNUCFG_DESC"/>
+			</fieldset>
+			<fieldset name="mobileoptions" label="TPL_SPARKY_FRAMEWORK_MOBILE">
+				<field name="enableResponsive" type="flipyesno" default="1" label="TPL_SPARKY_FRAMEWORK_ENABLE_RESPONSIVE_LBL" description="TPL_SPARKY_FRAMEWORK_ENABLE_RESPONSIVE_DESC"/>
+				<field name="enableResponsiveMenu" type="flipyesno" default="1" label="TPL_SPARKY_FRAMEWORK_ENABLE_RESPONSIVE_MENU_LBL" description="TPL_SPARKY_FRAMEWORK_ENABLE_RESPONSIVE_MENU_DESC"/>
+				<field name="responsiveMenuTriggerValue" type="dimension" default="992@px" label="TPL_SPARKY_FRAMEWORK_RESPONSIVE_MENU_TRIGGER_LBL" description="TPL_SPARKY_FRAMEWORK_RESPONSIVE_MENU_TRIGGER_DESC" />
+				<field name="menuIconImage" type="imagelist" label="TPL_SPARKY_FRAMEWORK_MENU_ICON_IMAGE_LBL" description="TPL_SPARKY_FRAMEWORK_IMAGE_SELECT_DESC" default="tinynav.png" directory="templates/sparky_framework/images" />
+		    </fieldset>
+		    <fieldset name="customcode" label="TPL_SPARKY_FRAMEWORK_CUSTOM">
+		    	<field name="subtabstart1" type="subtabstart" default="1" label="CSS"/>
+		    		<field name="customcodeSpacer" type="spacer" label="TPL_SPARKY_FRAMEWORK_CUSTOM_CSS_CODE_DESC"/>
+					<field name="customcodecss" type="textarea" cols="50" rows="3" label="" filter="raw" default=""/>
+				<field name="subtabstart2" type="subtabstart" default="1" label="JavaScript"/>
+					<field name="customcodeSpacer2" type="spacer" label="TPL_SPARKY_FRAMEWORK_CUSTOM_JS_CODE_DESC"/>
+					<field name="customcodejs" type="textarea" cols="50" rows="3" label="" filter="raw" default=""/>
+				<field name="subtabstart3" type="subtabstart" default="1" label="&lt; head &gt;"/>
+					<field name="customcodeSpacer3" type="spacer" label="TPL_SPARKY_FRAMEWORK_CUSTOM_HEAD_CODE_DESC"/>
+					<field name="customhead" type="textarea" cols="50" rows="3" label="" filter="raw" default=""/>
+		    </fieldset>
+			<fieldset name="exportoptions" label="TPL_SPARKY_FRAMEWORK_EXPORT_OPTIONS">
+				<field name="export" type="hotexport" default="" label="" />
+				<field name="exportedcssfile" type="hidden" default="" value="" />
+				<field name="exportedjsfile" type="hidden" default="" value="" />
+				<field name="exportedjsfooterfile" type="hidden" default="" value=""/>
+			</fieldset>
+			<fieldset name="premiumtab" label="PREMIUM">
+				<field name="premium" type="premium" default="" label="" />
+			</fieldset>
+	    </fields>
+	</config>
+	<updateservers>
+		<server type="extension" priority="1" name="Sparky Template">http://update.hotjoomlatemplates.com/tpl_sparky_framework.xml</server>
+	</updateservers>
+</extension>

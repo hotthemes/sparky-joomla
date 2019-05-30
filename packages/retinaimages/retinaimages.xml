@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="1.6" type="plugin" group="content">
+    <name>Content - Retina Images</name>
+    <author>HotThemes</author>
+    <creationDate>October 2016</creationDate>
+    <copyright>Copyright 2016 by HotThemes.</copyright>
+	<license>GNU General Public License version 2 or later</license>
+    <authorEmail>info@hotjoomlatemplates.com</authorEmail>
+    <authorUrl>http://www.hotjoomlatemplates.com</authorUrl>
+    <version>2.7.5</version>
+    <description>PLG_RETINA_IMAGES_DESCRIPTION</description>
+    <scriptfile>install.php</scriptfile>
+	
+    <files>
+        <filename plugin="retinaimages">retinaimages.php</filename>
+    </files>
+	
+	<languages folder="language">
+		<language tag="en-GB">en-GB/en-GB.plg_content_retinaimages.ini</language>
+		<language tag="en-GB">en-GB/en-GB.plg_content_retinaimages.sys.ini</language>
+	</languages>
+	
+    <config>
+		<fields name="params">
+			<fieldset name="basic">
+				<field name="fileNameExtension" type="text" default="-2x" label="LABEL FILE NAME EXTENSION" description="DESC FILE NAME EXTENSION" />
+			</fieldset>
+		</fields>
+	</config>
+
+	<updateservers>
+        <server type="extension" priority="1" name="Sparky Plugin - Retina Images">http://update.hotjoomlatemplates.com/plg_retinaimages.xml</server>
+    </updateservers>
+	
+</extension>

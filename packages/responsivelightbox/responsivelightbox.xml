@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="1.6" type="plugin" group="content">
+    <name>Content - Responsive Lightbox</name>
+    <author>HotThemes</author>
+    <creationDate>October 2015</creationDate>
+    <copyright>Copyright 2015 by HotThemes.</copyright>
+	<license>GNU General Public License version 2 or later</license>
+    <authorEmail>info@hotjoomlatemplates.com</authorEmail>
+    <authorUrl>http://www.hotjoomlatemplates.com</authorUrl>
+    <version>2.7.5</version>
+    <description>PLG_RESPONSIVE_LIGHTBOX_DESCRIPTION</description>
+    <scriptfile>install.php</scriptfile>
+	
+    <files>
+        <filename plugin="responsivelightbox">responsivelightbox.php</filename>
+		<folder>css</folder>
+		<folder>images</folder>
+		<folder>js</folder>
+    </files>
+	
+	<languages folder="language">
+		<language tag="en-GB">en-GB/en-GB.plg_content_responsivelightbox.ini</language>
+		<language tag="en-GB">en-GB/en-GB.plg_content_responsivelightbox.sys.ini</language>
+	</languages>
+	
+    <config>
+		<fields name="params">
+			<fieldset name="basic">
+				<field name="lightboxMode" type="list" default="g" label="LABEL LIGHTBOX MODE">
+					<option value="a">With activity indication</option>
+					<option value="b">With overlay and activity indication</option>
+					<option value="c">With "close" button and activity indication</option>
+					<option value="e">With navigation and activity indication</option>
+					<option value="g">With arrows and activity indication</option>
+					<option value="f">Combination</option>
+				</field>
+				<field name="backgroundColor" type="color" default="#EEEEEE" label="LABEL BACKGROUND COLOR" />
+				<field name="backgroundHoverColor" type="color" default="#FFFFFF" label="LABEL BACKGROUND HOVER COLOR" />
+				<field name="overlay" type="text" default="255,255,255" label="LABEL OVERLAY COLOR" description="DESC DESC RGB COLOR" />
+				<field name="borderWidth" type="text" default="1" label="LABEL BORDER WIDTH" description="DESC BORDER WIDTH" /> 
+				<field name="borderColor" type="color" default="#cccccc" label="LABEL BORDER COLOR" description="DESC BORDER COLOR" />
+				<field name="borderHoverColor" type="color" default="#999999" label="LABEL BORDER HOVER COLOR" description="DESC BORDER HOVER COLOR" /> 
+				<field name="thumbsMarginH" type="text" default="10" label="LABEL HORIZ THUMB MARGINS" description="DESC HORIZ THUMB MARGINS" /> 
+				<field name="thumbsMarginV" type="text" default="10" label="LABEL VERT THUMB MARGINS" description="DESC VERT THUMB MARGINS" />
+				<field name="thumbsPadding" type="text" default="3" label="LABEL PADDING" description="DESC PADDING" /> 
+				<field name="thumbsWidth" type="text" default="200" label="LABEL THUMB WIDTH" description="DESC THUMB WIDTH" />
+				<field name="thumbsHeight" type="text" default="200" label="LABEL THUMB HEIGHT" description="DESC THUMB HEIGHT" />
+				<field name="imageQuality" type="text"  default="80" label="LABEL THUMBS QUALITY" description="DESC THUMBS QUALITY" />
+				<field type="spacer" label="LABEL PHOTO GALLERY INFO" />
+			</fieldset>
+		</fields>
+	</config>
+
+	<updateservers>
+        <server type="extension" priority="1" name="Sparky Plugin - Responsive Lightbox">http://update.hotjoomlatemplates.com/plg_responsivelightbox.xml</server>
+    </updateservers>
+	
+</extension>

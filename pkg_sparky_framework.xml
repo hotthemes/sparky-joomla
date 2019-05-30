@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<extension type="package" version="3.0" method="upgrade">
+	<name>Sparky Framework Package</name>
+	<author>HotThemes</author>
+	<creationDate>November 2016</creationDate>
+	<packagename>sparky_framework</packagename>
+	<version>2.7.10</version>
+	<url>https://www.hotjoomlatemplates.com/</url>
+	<packager>HotThemes</packager>
+	<packagerurl>http://www.hotjoomlatemplates.com/</packagerurl>
+	<description>Complete package of Sparky Framework contain main template and additional plugins.</description>
+	<files folder="packages">
+		<file type="template" id="sparky_framework" client="site">tpl_sparky_framework</file>
+		<file type="plugin" id="sparkyonsave" group="system">sparkyonsave</file>
+		<file type="plugin" id="responsivelightbox" group="content">responsivelightbox</file>
+		<file type="plugin" id="retinaimages" group="content">retinaimages</file>
+	</files>
+</extension>

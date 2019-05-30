@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="1.6" type="plugin" group="system">
+    <name>System - Sparky On Save</name>
+    <author>HotThemes</author>
+    <creationDate>October 2016</creationDate>
+    <copyright>Copyright 2016 by HotThemes.</copyright>
+	<license>GNU General Public License version 2 or later</license>
+    <authorEmail>info@hotjoomlatemplates.com</authorEmail>
+    <authorUrl>http://www.hotjoomlatemplates.com</authorUrl>
+    <version>2.7.5</version>
+    <description>Sparky On Save - Required plugin for Sparky Framework. If you are using Sparky Framework, please DO NOT disable this plugin! Otherwise, Sparky Framework template parameters will not be saved correctly.</description>
+    <scriptfile>install.php</scriptfile>
+	
+    <files>
+        <filename plugin="sparkyonsave">sparkyonsave.php</filename>
+    </files>
+
+    <updateservers>
+        <server type="extension" priority="1" name="Sparky Plugin - Sparky On Save">http://update.hotjoomlatemplates.com/plg_sparkyonsave.xml</server>
+    </updateservers>
+	
+</extension>
