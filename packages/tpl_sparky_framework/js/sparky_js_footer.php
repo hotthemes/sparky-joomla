@@ -44,7 +44,7 @@ jQuery(document).ready(function(){
     foreach($parallax_images as $key => $value) {
         $jsoutputfooter .= '
         var $bgobj = jQuery(".sparky_row'.$key.'");
-        var yPos = -($window.scrollTop() / '.$value.');
+        var yPos = -(($window.scrollTop() - $bgobj.offset().top - $bgobj.innerHeight()) / '.$value.');
         var coords = "50% "+ yPos + "px";
         $bgobj.css({ backgroundPosition: coords });';
     }
