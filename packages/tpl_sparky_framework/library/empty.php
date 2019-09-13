@@ -6,7 +6,7 @@
 # Author: HotThemes
 # Website: http://www.hotjoomlatemplates.com
 -------------------------------------------------------------------------*/?>
-<div class="sparky_cell mp_empty<?php echo $empty_no; ?>">
+<div class="sparky_cell mp_empty<?php echo $empty_no; ?> sparkle<?php echo $mposition[2]; ?>">
     <!-- EMPTY CELL -->
     <div>&nbsp;</div>
 </div>

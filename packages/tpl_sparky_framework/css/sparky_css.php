@@ -254,41 +254,6 @@ $empty_no = 0;
 $empty_width = ($mposition[2]*100) / $tparams->gridSystem;
 $k = 1;
 
-foreach($module_grid2 as $gridRow) {
-//$gridRow[0] - Name
-//$gridRow[1] - Class
-//$gridRow[2] - ModulePos1,ModulePos2...
-//$gridRow[3] - Holds content flag: true/false
-
-    foreach($gridRow[2] as $mposition) {
-    //$mposition[0] - position name 
-    //$mposition[1] - number of grid cells occupied by position
-    //$mposition[2] - number of empty cells left of module
-    
-        $mpwidth = $cell_size * $mposition[1];  
-        $mpleft_off = $cell_size * $mposition[2];  
-        if ($mposition[0] == "joom_content") {
-            if ($mpleft_off) {
-                $cssoutput .= "
-.mp_empty".$empty_no." {
-    width:".$empty_width."%;
-}";
-
-                $empty_no++;
-            }  
-        }else{
-            if ($mpleft_off) {
-                $cssoutput .= "
-.mp_empty".$empty_no."{
-    width:".$empty_width."%;
-}";
-
-                $empty_no++;
-            }
-        }
-    }
-}
-
 if ($tparams->enableResponsive) {
     $cssoutput .= "
 }";

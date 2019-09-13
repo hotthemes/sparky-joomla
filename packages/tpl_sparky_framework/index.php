@@ -243,13 +243,8 @@ foreach($module_grid2 as $gridRow) {
 			$mpleft_off = $cell_size * $mposition[2];  
 			if($mposition[0] == "joom_content") {			/////////////////// if CONTENT cell
                 if($mpleft_off){							// if empty cells
-                ?>
-                  <div class="sparky_cell mp_empty<?php echo $empty_no; ?>">
-                     <!-- EMPTY CELL -->
-                     <div>&nbsp;</div>
-                  </div>
-                <?php
-                 $empty_no++;
+                	require(dirname(__FILE__).DS.'library'.DS.'empty.php');
+					$empty_no++;
                 }  
                 ?>
                 <main class="sparky_cell content_sparky sparkle<?php echo $mposition[1];?>">
