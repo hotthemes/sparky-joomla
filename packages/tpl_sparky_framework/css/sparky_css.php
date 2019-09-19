@@ -542,7 +542,7 @@ ul.arrow li:before, ul.arrowleft li:before, ul.calendar li:before, ul.checklist 
     font-family: 'Font Awesome 5 Free';
     font-weight: 900;
     padding: 0;
-    margin: 0 -20px;
+    margin: 0 -30px;
     position: absolute;
 }
 
