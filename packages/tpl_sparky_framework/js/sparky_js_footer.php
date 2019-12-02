@@ -34,22 +34,31 @@ jQuery(document).ready(function(){
 ////////////// Parallax scroll
 //////////////////////////////
 
+// Scroll the background at var speed
+// the yPos is a negative value because we're scrolling it UP!
+
+// Distance of obj from top:    $bgobj.offset().top;
+// Current scroll position:     $window.scrollTop());
+// Object height:               $bgobj.innerHeight());
+// Screen height:               jQuery(window).innerHeight()
+
 if (!empty($parallax_images)) {
         $jsoutputfooter .= '
 // Parallax scroll
 
 jQuery(document).ready(function(){
-    $window = jQuery(window);
-    jQuery(window).scroll(function() {';
+    $window = jQuery(window);';
     foreach($parallax_images as $key => $value) {
         $jsoutputfooter .= '
-        var $bgobj = jQuery(".sparky_row'.$key.'");
-        var yPos = -(($window.scrollTop() - $bgobj.offset().top - $bgobj.innerHeight()) / '.$value.');
-        var coords = "50% "+ yPos + "px";
-        $bgobj.css({ backgroundPosition: coords });';
+        var $bgobj'.$key.' = jQuery(".sparky_row'.$key.'");
+        jQuery(window).scroll(function() {
+            var yPos'.$key.' = -( ($window.scrollTop() - $bgobj'.$key.'.offset().top - $bgobj'.$key.'.innerHeight() ) / '.$value.' + jQuery(window).innerHeight() );
+            var coords'.$key.' = "50% "+ yPos'.$key.' + "px";
+            $bgobj'.$key.'.css({ backgroundPosition: coords'.$key.' });
+        });';
+
     }
     $jsoutputfooter .= '
-    }); 
 });
 ';
 }
