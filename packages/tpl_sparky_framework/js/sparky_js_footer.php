@@ -50,12 +50,14 @@ jQuery(document).ready(function(){
     $window = jQuery(window);';
     foreach($parallax_images as $key => $value) {
         $jsoutputfooter .= '
-        var $bgobj'.$key.' = jQuery(".sparky_row'.$key.'");
-        jQuery(window).scroll(function() {
-            var yPos'.$key.' = -( ($window.scrollTop() - $bgobj'.$key.'.offset().top - $bgobj'.$key.'.innerHeight() ) / '.$value.' + jQuery(window).innerHeight() );
-            var coords'.$key.' = "50% "+ yPos'.$key.' + "px";
-            $bgobj'.$key.'.css({ backgroundPosition: coords'.$key.' });
-        });';
+        if(jQuery(".sparky_row'.$key.'").length) {
+            var $bgobj'.$key.' = jQuery(".sparky_row'.$key.'");
+            jQuery(window).scroll(function() {
+                var yPos'.$key.' = -( ($window.scrollTop() - $bgobj'.$key.'.offset().top - $bgobj'.$key.'.innerHeight() ) / '.$value.' + jQuery(window).innerHeight() );
+                var coords'.$key.' = "50% "+ yPos'.$key.' + "px";
+                $bgobj'.$key.'.css({ backgroundPosition: coords'.$key.' });
+            });
+        }';
 
     }
     $jsoutputfooter .= '
