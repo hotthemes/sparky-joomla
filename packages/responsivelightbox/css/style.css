@@ -33,13 +33,10 @@ html {
 #imagelightbox-loading {
 	width: 20px; /* 40 */
 	height: 20px; /* 40 */
-	background-color: #444;
-	background-color: rgba( 0, 0, 0, .5 );
 	position: fixed;
 	z-index: 10003;
 	top: 50%;
 	left: 50%;
-	padding: 10px; /* 10 */
 	margin: -20px 0 0 -20px; /* 20 */
 
 	-webkit-box-shadow: 0 0 40px rgba( 0, 0, 0, .75 ); /* 40 */
@@ -95,6 +92,7 @@ html {
 
 	-webkit-transition: color .3s ease;
 	transition: color .3s ease;
+	box-sizing: border-box;
 }
 
 #imagelightbox-close:hover,
@@ -176,8 +174,6 @@ html {
 .imagelightbox-arrow {
 	width: 3.75em; /* 60 */
 	height: 7.5em; /* 120 */
-	background-color: #444;
-	background-color: rgba( 0, 0, 0, .5 );
 	vertical-align: middle;
 	display: none;
 	position: fixed;
@@ -188,8 +184,6 @@ html {
 
 .imagelightbox-arrow:hover,
 .imagelightbox-arrow:focus {
-	background-color: #666;
-	background-color: rgba( 0, 0, 0, .75 );
 }
 
 .imagelightbox-arrow:active {
@@ -215,13 +209,13 @@ html {
 
 .imagelightbox-arrow-left:before {
 	border-left: none;
-	border-right-color: #fff;
+	border-right-color: #333;
 	margin-left: -0.313em; /* 5 */
 }
 
 .imagelightbox-arrow-right:before {
 	border-right: none;
-	border-left-color: #fff;
+	border-left-color: #333;
 	margin-right: -0.313em; /* 5 */
 }
 

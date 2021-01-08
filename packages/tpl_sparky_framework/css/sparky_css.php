@@ -28,7 +28,7 @@ body {
     color:".$tparams->pColor.";
     font-size:".str_replace("@", "", $tparams->pSize).";
     line-height:".$tparams->pLineHeight.";
-    font-family:'".$pFontHot->fontFamily."'";
+    font-family:".$pFontHot->fontFamily;
     if (isset($pFontHot->categories)) {
         $cssoutput .= ",".$pFontHot->categories;
     }
@@ -300,7 +300,7 @@ h1, h1 a {
     line-height:".$tparams->h1LineHeight.";
     color:".$tparams->h1Color.";
     font-size:".str_replace("@", "", $tparams->h1Size).";
-    font-family:'".$h1FontHot->fontFamily."'";
+    font-family:".$h1FontHot->fontFamily;
     if (isset($h1FontHot->categories)) {
         $cssoutput .= ",".$h1FontHot->categories;
     }
@@ -324,7 +324,7 @@ h2, h2 a {
     line-height:".$tparams->h2LineHeight.";
     color:".$tparams->h2Color.";
     font-size:".str_replace("@", "", $tparams->h2Size).";
-    font-family:'".$h2FontHot->fontFamily."'";
+    font-family:".$h2FontHot->fontFamily;
     if (isset($h2FontHot->categories)) {
         $cssoutput .= ",".$h2FontHot->categories;
     }
@@ -353,7 +353,7 @@ h3 {
     color:".$tparams->h3Color.";
     font-size:".str_replace("@", "", $tparams->h3Size).";
     line-height:".$tparams->h3LineHeight.";
-    font-family:'".$h3FontHot->fontFamily."'";
+    font-family:".$h3FontHot->fontFamily;
     if (isset($h3FontHot->categories)) {
         $cssoutput .= ",".$h3FontHot->categories;
     }
@@ -382,7 +382,7 @@ h4 {
     color:".$tparams->h4Color.";
     font-size:".str_replace("@", "", $tparams->h4Size).";
     line-height:".$tparams->h4LineHeight.";
-    font-family:'".$h4FontHot->fontFamily."'";
+    font-family:".$h4FontHot->fontFamily;
     if (isset($h4FontHot->categories)) {
         $cssoutput .= ",".$h4FontHot->categories;
     }
@@ -501,7 +501,7 @@ form {
 
 input, textarea, button, select {
     box-sizing:content-box;
-    font-family:'".$pFontHot->fontFamily."';
+    font-family:".$pFontHot->fontFamily.";
 }
 
 #login-form input {
@@ -928,7 +928,7 @@ $cssoutput .= "
 .sparky_logo {
     color:".$tparams->logoColor.";
     font-size:".str_replace("@", "", $tparams->logoSize).";
-    font-family:'".$logoFontHot->fontFamily."'";
+    font-family:".$logoFontHot->fontFamily;
     if (isset($logoFontHot->categories)) {
         $cssoutput .= ",".$logoFontHot->categories;
     }
@@ -945,7 +945,7 @@ $cssoutput .= "
 .sparky_slogan {
     color:".$tparams->sloganColor.";
     font-size:".str_replace("@", "", $tparams->sloganSize).";
-    font-family:'".$sloganFontHot->fontFamily."'";
+    font-family:".$sloganFontHot->fontFamily;
     if (isset($sloganFontHot->categories)) {
         $cssoutput .= ",".$sloganFontHot->categories;
     }
